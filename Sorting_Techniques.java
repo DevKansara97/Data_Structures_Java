@@ -147,7 +147,7 @@ public class Sorting_Techniques {
         // Partition Index: index of the pivot
         int pi = partitionSequence(theSeq, first, last);
 
-        quickSort(theSeq, 0, pi - 1);
+        quickSort(theSeq, first, pi - 1);
         quickSort(theSeq, pi + 1, last);
     }
 

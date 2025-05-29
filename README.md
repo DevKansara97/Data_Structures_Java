@@ -140,57 +140,57 @@ Sorting: To make search operation easy
 Hashing:
         - HashTable / HashMap 
         - Store elements as key-value pairs
-
-Trees:
-        - Non linear Data Structure
-        - Hierarchichal
-        - Undirected Acyclic Connected Graph 
-        - Node, Root, Path, Leaves, Ancestors, Level, Subtree, Height, Depth
-        - Traversals: 
-                1. Depth First Traversal: O(n) 
-                        - PreOrder: Root -> Left -> Right 
-                        - Inorder: Left -> Root -> Right 
-                        - PostOrder: Left -> Right -> Root
-                2. Breadth First Traversal: O(n)
-                        - Level Order Traversal
-                                - Queue Data Structure is used (FIFO)
-
-        - Binary Tree:
-                - Each parent has atmost 2 children
-                - Count Nodes: O(n)
-                - Sum of Nodes: O(n)
-                - Height of Tree: O(n)
-                - Diameter of Tree: O(n^2)
-                - Diameter of Tree using extra structure / class: O(n)
-                - SubTree of MainTree
-
-        - Perfect Binary Tree
-                - Every node has exact 2 children
-                - Full Binary Tree with all leaf nodes at same height
-        - Complete Binary Tree
-                - Perfect Binary Tree till height-1
-                - Addition of nodes takes place from left to right 
-        - Full Binary Tree
-                - Every node has either 0 or 2 children
-                - Internal Nodes(I), Total Nodes(N), Leaf Nodes(L)
-                        - N = 2I + 1
-                        - L = I + 1
         
-        - Binary Search Tree:
-                - Left < Root, Right > Root (No duplicates)
-                - Inorder Traversal -> Sorted Sequence
-                - insert(root, val) : Avg: O(h), Worst: O(n)
-                - search(root, val) : Avg: O(h), Worst: O(n)
-                - delete(root, val) : Avg: O(h), Worst: O(n)
-                        - Leaf Node -> return null
-                        - One Child -> return non null node
-                        - Two Children -> return inorder successor (leftmost node in right subtree)
+    Trees:
+            - Non linear Data Structure
+            - Hierarchichal
+            - Undirected Acyclic Connected Graph 
+            - Node, Root, Path, Leaves, Ancestors, Level, Subtree, Height, Depth
+            - Traversals: 
+                    1. Depth First Traversal: O(n) 
+                            - PreOrder: Root -> Left -> Right 
+                            - Inorder: Left -> Root -> Right 
+                            - PostOrder: Left -> Right -> Root
+                    2. Breadth First Traversal: O(n)
+                            - Level Order Traversal
+                                    - Queue Data Structure is used (FIFO)
 
-        - Adelson Velsky Landis:
-                - BST with |Hl - Hr| <= 1
-                - Insertion(4 Cases): 
-                        - Left Rotation
-                        - Right Rotation
-                        - Left-Right Rotation
-                        - Right-Left Rotation
-                
+            - Binary Tree:
+                    - Each parent has atmost 2 children
+                    - Count Nodes: O(n)
+                    - Sum of Nodes: O(n)
+                    - Height of Tree: O(n)
+                    - Diameter of Tree: O(n^2)
+                    - Diameter of Tree using extra structure / class: O(n)
+                    - SubTree of MainTree
+    
+            - Perfect Binary Tree
+                    - Every node has exact 2 children
+                    - Full Binary Tree with all leaf nodes at same height
+            - Complete Binary Tree
+                    - Perfect Binary Tree till height-1
+                    - Addition of nodes takes place from left to right 
+            - Full Binary Tree
+                    - Every node has either 0 or 2 children
+                    - Internal Nodes(I), Total Nodes(N), Leaf Nodes(L)
+                            - N = 2I + 1
+                            - L = I + 1
+            
+            - Binary Search Tree:
+                    - Left < Root, Right > Root (No duplicates)
+                    - Inorder Traversal -> Sorted Sequence
+                    - insert(root, val) : Avg: O(h), Worst: O(n)
+                    - search(root, val) : Avg: O(h), Worst: O(n)
+                    - delete(root, val) : Avg: O(h), Worst: O(n)
+                            - Leaf Node -> return null
+                            - One Child -> return non null node
+                            - Two Children -> return inorder successor (leftmost node in right subtree)
+    
+            - Adelson Velsky Landis:
+                    - BST with |Hl - Hr| <= 1
+                    - Insertion(4 Cases): 
+                            - Left Rotation
+                            - Right Rotation
+                            - Left-Right Rotation
+                            - Right-Left Rotation
+                    

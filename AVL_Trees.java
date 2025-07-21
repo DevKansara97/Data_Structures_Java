@@ -53,12 +53,12 @@ public class AVL_Trees {
 
         // Case 1: Left Left
         if (balance > 1 && val < node.left.val) {
-            rightRotate(node);
+            return rightRotate(node);
         }
 
         // Case 2: Right Right
         if (balance < -1 && val > node.right.val) {
-            leftRotate(node);
+            return leftRotate(node);
         }
 
         // Case 3: Left Right 

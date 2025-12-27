@@ -141,13 +141,14 @@ Sorting: To make search operation easy
 Hashing:
         - HashTable / HashMap 
         - Store elements as key-value pairs
-        
-    Trees:
-            - Non linear Data Structure
-            - Hierarchichal
-            - Undirected Acyclic Connected Graph 
-            - Node, Root, Path, Leaves, Ancestors, Level, Subtree, Height, Depth
-            - Traversals: 
+
+Trees:
+    - Non linear Data Structure
+    - Hierarchichal
+    - Undirected Acyclic Connected Graph
+    - Node, Root, Path, Leaves, Ancestors, Level, Subtree, Height, Depth
+    - Traversals:
+
                     1. Depth First Traversal: O(n) 
                             - PreOrder: Root -> Left -> Right 
                             - Inorder: Left -> Root -> Right 

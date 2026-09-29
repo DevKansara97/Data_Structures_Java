@@ -63,6 +63,8 @@ Stack:
     3. isEmpty(): O(1)
     4. length: O(1)
 
+    - Advance topics: Monotonic Stack
+
 Queue:
     - FIFO 
     - Implemented using Arrays and LL
@@ -70,6 +72,8 @@ Queue:
     2. Delete: O(1) : dequeue()
     3. isEmpty(): O(1)
     4. length: O(1)
+    
+    - Advance topics: Deque
 
 Priority Queue:
     - Implemented as Array of Arrays, Array of Linked Lists, Linked List of Arrays, Linked List of Linked Lists
@@ -121,7 +125,7 @@ Sorting: To make search operation easy
     4. Merge Sort: 
         - Divide and Conquer approach
         - O(n) to merge and O(nlogn) to divide
-        - Recurrence Relation: T(n) = 2T(n - 1) + n
+        - Recurrence Relation: T(n) = 2T(n / 2) + n
         - Space Complexity: O(n)
         - Recursion
                 - Best: O(nlogn)
@@ -130,7 +134,7 @@ Sorting: To make search operation easy
     5. Quick Sort: 
         - Divide and Conquer approach
         - Space Complexity: O(1)
-        - Recurrence Relation: T(n) = 2T(n - 1) + n
+        - Recurrence Relation: T(n) = 2T(n / 2) + n
         - Invented by Tony Hoare (Turing Award)
         - Recursion 
                 - Best: O(nlogn)
@@ -141,6 +145,7 @@ Sorting: To make search operation easy
 Hashing:
         - HashTable / HashMap 
         - Store elements as key-value pairs
+        - Hash Function
 
 Trees:
     - Non linear Data Structure
@@ -188,7 +193,7 @@ Trees:
                             - One Child -> return non null node
                             - Two Children -> return inorder successor (leftmost node in right subtree)
     
-            - Adelson Velsky Landis:
+            - Adelson Velsky Landis (AVL):
                     - BST with |Hl - Hr| <= 1
                     - Insertion(4 Cases): 
                             - Left Rotation
